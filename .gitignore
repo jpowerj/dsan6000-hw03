@@ -3,3 +3,5 @@
 .venv/*
 *.parquet
 data/*.parquet
+*.pkl
+data/*.pkl
