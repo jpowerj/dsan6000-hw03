@@ -84,21 +84,9 @@ To create this Access Token, **follow the instructions [here](https://docs.githu
 Now that you are set up on EC2 (after completing HW1), and now that you have connected to your EC2 instance to develop in Python using Jupyter notebooks (after completing HW2), the workflow for homeworks from now onwards should now feel more familiar! The remaining instructions are given in two notebooks:
 
 * In `DSAN6000_HW3A.ipynb` you will use `joblib` to handle distributing the subtasks of an "embarrassingly-parallel" problem to the cores of your EC2 instance
-* In `DSAN6000_HW3B.ipynb` you will use `MRJob` to **"factor" a *non-*embarrassingly-parallel problem** into a series of embarrassingly-parallel subtasks, distribute these subtasks to the cores of your EC2 instance, and then **re-combine** the subtask results into a solution to the original problem.
+* In `DSAN6000_HW3B.ipynb` you will use `MRJob` to **"factor"** a *non-*embarrassingly-parallel problem into a series of embarrassingly-parallel subtasks, distribute these subtasks to the cores of your EC2 instance, and then **re-combine** the subtask results into a solution to the original problem.
 
 ## HW3 Submission
-
-Once you have completed the steps in each notebook, your local repository (on EC2) should contain the following **new** files (that is, on top of the files that were originally provided, in your copy of the repo template):
-
-* `hw02-1-download-data.ipynb`
-* `hw02-2-data-lake.ipynb`
-* `hw02-3-hourly-plots.ipynb`
-* `images/hourly-events.svg`
-* `images/hourly-events.png`
-* `images/events-by-type.svg`
-* `images/events-by-type.png`
-
-Note the absence of any `.parquet` files, and the absence of a `data` subfolder! You will work with these files in Part 2.2, but you can think of them as temporary files: they only exist "ephemerally" on your EC2 drive to facilitate transfer from the `s3://dsan6000-wikipedia` bucket to the newly-created bucket in your account.
 
 Since you submitted your GitHub URL all the way up at the top of the instructions, all that is left is for you to **push your work from EC2 to GitHub**. If you push a commit with the commit message **"Final submission"** (by running `git commit -m "Final submission"` and then `git push`), we will consider your repo ready to grade – otherwise, if no commit with this message is found, we will consider the **most recent commit when the due date is reached** to be your final submission.
 
